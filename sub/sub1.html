@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Subject' content='국민건강보험공단'>
+	<meta name='Title' content='국민건강보험공단 민원여기요'>
+	<meta name='Keywords' content='국민건강보험공단'>
+	<meta name='Author' content='최흐에'>
+	<meta name='Publisher' content='최흐에'>
+	<meta name='Description' content='국민건강보험공단'>
+	<meta name='Author-Date' content='2021-10-2'>
+	<meta name='Copyright' content='최흐에'>
+	<meta name='Robots' content='index,follow'>
+    <!-- FAVICON: -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Sub1</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub1.css">
+</head>
+<body>
+    <ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#nav">메뉴 바로가기</a></li>
+		<li><a href="#content">내용 바로가기</a></li>
+	</ul>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-top">
+                <div class="inner">
+                    <div class="volumebar">
+                        <span class="zoom">화면
+                            <button type="button" value="zoom in" class="zoom-in"></button><button type="button" value="zoom out" class="zoom-out"></button>
+                        </span>
+                        <span class="volumn">소리
+                            <button type="button" value="volumn up" class="zoom-in"></button>
+                            <button type="button" value="volumn down" class="zoom-out"></button>
+                            <button type="button" class="playsound"></button>
+                        </span>
+                    </div>
+                    <div class="membernav">
+                        <ul>
+                            <li><a href="./login.html">로그인</a></li>
+                            <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaza01600m01.do">회원가입</a></li>
+                            <li><a href="https://www.nhis.or.kr/nhis/etc/wbhazd01500m01.do">인증서안내</a></li>
+                            <li><a href="https://www.nhis.or.kr/nhis/about/sitemap.do">전체메뉴</a></li>
+                            <li>
+                                <button type="button" class="task-button1">Language</button>
+                                <div class="header-language">
+                                    <ul>
+                                        <li><a href="https://www.nhis.or.kr/english/index.do">English</a></li>
+                                        <li><a href="https://www.nhis.or.kr/chinese/index.do">中文</a></li>
+                                        <li><a href="https://www.nhis.or.kr/japanese/index.do">日本</a></li>
+                                        <li><a href="https://www.nhis.or.kr/vietnamese/index.do">Tiếng Việt</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="taskButton2">
+                                <label for="taskButton2">분야별업무사이트</label>
+                                <div class="task-shortcuts">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="https://si4n.nhis.or.kr/jpza/JpZaa00101.do"></a>
+                                                <p>사회보험<br>통합징수 포탈</p>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.longtermcare.or.kr/npbs/index.jsp"></a>
+                                                <p>노인장기<br>요양보험</p>
+                                            </li>
+                                            <li>
+                                                <a href="https://medicare.nhis.or.kr/portal/"></a>
+                                                <p>요양기관<br>정보마당</p>
+                                            </li>
+                                            <li>
+                                                <a href="http://edi.nhis.or.kr/"></a>
+                                                <p>EDI<br>서비스</p>
+                                            </li>
+                                            <li>
+                                                <a href="http://sis.nhis.or.kr/nxui/index.do"></a>
+                                                <p>건강검진<br>기관포탈</p>
+                                            </li>
+                                            <li>
+                                                <a href="http://nhiss.nhis.or.kr/"></a>
+                                                <p>건강보험자료<br>공유서비스</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <label for="taskButton2"></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="inner">
+                    <h1><a href="index.html" title="logo" class="logo">h-well 국민건강보험</a></h1>
+                    <div class="gnbbar">
+                        <div class="bg"></div>
+                        <div class="gnb">
+                            <ul>
+                                <li>
+                                    <a href="../sub/sub1.html">민원여기요</a>
+                                    <ul class="two-depth">
+                                        <li><a href="">민원안내</a></li>
+                                        <li><a href="">개인민원</a></li>
+                                        <li><a href="">사업장민원</a></li>
+                                        <li><a href="">상담문의</a></li>
+                                        <li><a href="">신고센터</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../sub/sub2.html">건강iN</a>
+                                    <ul class="two-depth">
+                                        <li><a href="#">나의건강관리</a></li>
+                                        <li><a href="#">가족건강관리</a></li>
+                                        <li><a href="#">건강프로그램</a></li>
+                                        <li><a href="#">건강생활</a></li>
+                                        <li><a href="#">건강자료실</a></li>
+                                        <li><a href="#">검진기관/병원찾기</a></li>
+                                        <li><a href="#">국민건강알람</a></li>
+                                        <li><a href="#">건강생활실천지원금제</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../sub/sub3.html">정책센터</a>
+                                    <ul class="two-depth">
+                                        <li><a href="#">국민건강보험</a></li>
+                                        <li><a href="#">노인장기요양보험</a></li>
+                                        <li><a href="#">정책홍보관</a></li>
+                                        <li><a href="#">사회보험통합징수</a></li>
+                                        <li><a href="#">권리구제제도</a></li>
+                                        <li><a href="#">법령정보 건강Law</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../sub/sub4.html">국민과함께</a>
+                                    <ul class="two-depth">
+                                        <li><a href="#">정보공개</a></li>
+                                        <li><a href="#">경영공시</a></li>
+                                        <li><a href="#">국민참여</a></li>
+                                        <li><a href="#">뉴스/소식</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../sub/sub5.html">공단요모조모</a>
+                                    <ul class="two-depth">
+                                        <li><a href="#">공단소개</a></li>
+                                        <li><a href="#">조직 및 인원</a></li>
+                                        <li><a href="#">홍보센터</a></li>
+                                        <li><a href="#">경영철학</a></li>
+                                        <li><a href="#">사회공헌</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="favorite">
+                                <p>자주 찾는 메뉴</p>
+                                <ul>
+                                    <li><a href="https://www.nhis.or.kr/nhis/policy/wbhada01200m01.do">건강보험제도 유형</a></li>
+                                    <li><a href="https://www.nhis.or.kr/nhis/policy/wbhada01200m01.do">자격취득/가입</a></li>
+                                    <li><a href="https://www.nhis.or.kr/nhis/policy/wbhada01200m01.do">진료 및 투약정보</a></li>
+                                    <li><a href="https://www.nhis.or.kr/nhis/policy/wbhada01200m01.do">검진대상 조회</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <img src="../img/ico-search-navy.png" alt="icon to search">
+                        <img src="../img/ico-menu-navy.png" alt="go to menu">
+                </div>
+                </div>
+            </div>
+        </header>
+        <div class="where-at">
+            <ul>
+                <li><img src="../img/ico-location-home.png" alt="국건보 home 아이콘"></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01010m01.do">민원여기요</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01010m01.do">민원안내</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01010m01.do">개인민원안내</a></li>
+                <li>민원서비스 변경안내</li>
+            </ul>    
+        </div>
+        <div id="contents">
+            <div class="inner">
+                <div class="sidemenu">
+                    <h2>민원안내</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">개인민원안내</a>
+                            <ul>
+                                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">민원업무 목록</a></li>
+                                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01010m01.do">민원서비스 변경안내</a></li>
+                                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01100m01.do">민원신청따라하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">사업장민원안내</a>
+                            <ul>
+                                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">민원업무 목록</a></li>
+                                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01010m01.do">민원신청따라하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">자주묻는질문</a>
+                            <ul>
+                                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">자주묻는질문</a></li>
+                                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01010m01.do">보안프로그램장애해결</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.nhis.or.kr/nhis/minwon/wbhaba03900m01.do">서식자료실</a>
+                        </li>
+                        <li>
+                            <a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">장기요양 서식자료실</a>
+                        </li>
+                        <li>
+                            <a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">사업장 신고서식</a>
+                        </li>
+                        <li>
+                            <a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01000m01.do">무인민원발급안내</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="main">
+                    <div class="sub-title">
+                        <h3>민원서비스 변경안내</h3>
+                        <ul>
+                            <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01010m01.do#print" title="현재 화면 출력"></a></li>
+                            <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba01010m01.do" title="현재 화면 공유"></a></li>
+                        </ul>
+                    </div>
+                    <div class="notice-box1">
+                        <p>민원서비스 이렇게 통합되었습니다!</p>
+                        <p>사이버민원센터에서 이용하시던 민원 서비스를 통합된 건강보험공단홈페이지에서 이용해보세요.</p>
+                    </div>
+                    <div class="notice-box2">
+                        <p>기존 사이버민원센터와 사회보험징수포털의 개인민원서비스가 건강보험공단 홈페이지로 통합되었습니다.</p>
+                        <p>변경된 내용을 확인하시고 편리하게 이용해보세요.</p>
+                    </div>
+                    <div class="main-info">
+                        <div class="main-inner">
+                            <div class="titlebox1">
+                                <span class="previous">사이버민원센터</span>
+                                <span class="now">건강보험공단 통합 홈페이지</span>
+                            </div>
+                            <div class="changes">
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>자격</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>자격사항</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveQlfComptList.do" >민원여기요>개인민원>자격조회>자격사항</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>자격확인서 발급</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAea00501.do" >	민원여기요>개인민원>증명서 발급·확인>자격확인서</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>자격득실확인서 발급</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do" >	민원여기요>개인민원>증명서 발급·확인>자격득실확인서</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>건강보험증 재발급</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveJungRePbltnAgreeView.do" >민원여기요>개인민원>증명서 발급·확인>건강보험증 발급 신청</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>차상위본인부담경감증명서 발급</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAea00601.do" >	민원여기요>개인민원>증명서 발급·확인>차상위본인부담경감증명서</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>급여정지사항</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrievePaySuspend.do" >	민원여기요>개인민원>자격조회>급여정지사항</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>지역자격 취득변동사항</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveBhChangeList.do" >민원여기요>개인민원>자격조회>지역자격 취득변동사항</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>보험료</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>4대 사회보험료 계산</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/initCtrbCalcView.do" >민원여기요>개인민원>보험료 조회>4대보험료계산</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>지역보험료 부과내역</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveZnCtrbBugwaDescList.do" >	민원여기요>개인민원>보험료 조회>지역 보험료 조회</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>직장보험료 개인별 조회</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpZaa00110.do" >	민원여기요>개인민원>보험료 조회>직장 보험료 조회</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>인터넷 지로납부</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="http://www.giro.or.kr/" >www.giro.or.kr</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>보험료 납부확인서</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAea00101.do" >		민원여기요>개인민원>증명서 발급·확인>보험료납부확인서</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>건강보험<br>본인부담금<br>확인</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>사업장 자료제공 동의</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveFirmDataOffrAgreList.do" >민원여기요>개인민원>사업장 의료비 자료제공 동의</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>건강보험 본인부담금 발급</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveSbrdnAmtList.do" >	민원여기요>개인민원>증명서 발급·확인>건강보험 본인부담금 확인서</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>보조기기대여</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>지사별 잔여 보조기기 현황</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveCaaRsvtMthList.do" >정책센터>국민건강보험>보험급여>의료비신청>지사별 잔여 보조기기 현황</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>보험급여</p></span>
+                                    </div>
+                                    <table>
+                                        <tbody>
+                                            <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                            <tr>
+                                                <td>진료받은내용 보기</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td rowspan="2"><a href="https://www.nhis.or.kr/nhis/minwon/retrieveCareDescList.do" >민원여기요>개인민원>보험급여>진료받은내용 및 신고</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>신고회신내역</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>진료받은내용신고 포상금제도</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveDcltRwrdInstGuide.do" >	민원여기요>개인민원>보험급여>진료받은내용신고 포상금제도</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>임신·출산 진료비 온라인 신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td rowspan="3"><a href="https://www.nhis.or.kr/nhis/minwon/initPregOnln.do" >민원여기요>개인민원>보험급여>임신/출산 진료비</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>임신·출산 진료비 온라인 신청 내역 조회</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>임신·출산 진료비 잔액 확인</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>난임시술대상자 잔여급여횟수 조회</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveFu1301View.do" >민원여기요>개인민원>보험급여>난임시술대상자 잔여급여횟수 조회</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>기타징수금 납부확인서 발급</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveNabbuCfrDocAplyMgmtList.do" >	민원여기요>개인민원>증명서 발급·확인>기타징수금 납부확인서</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>치석제거 진료정보 조회</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveScaling.do" >	민원여기요>개인민원>보험급여>치석제거 진료정보 조회</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>현금급여 지급내역 조회</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveRealpaySearchView.do" >	민원여기요>개인민원>보험급여>현금급여 지급내역 조회</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>미지급 환급금<br>통합조회 및<br>신청</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>통합조회 및 신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td rowspan="7"><a href="https://www.nhis.or.kr/nhis/minwon/retrieveHwangubTotalList.do" >민원여기요>개인민원>환급금 조회/신청</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>본인부담금 환급금 신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>본인부담상한액 초과금 신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>보험료 과오납금 환급신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>기타징수금 과오납 환급금 신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>보험료체납 급여제한해제<br>공단부담금 환급신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>약품비 본인부담차액 신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>건강검진</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>대상조회 및 출력</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpTargetPerson.do" >건강iN>나의건강관리>건강검진정보>검진대상조회</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>건강검진결과 조회</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpTargetResultPerson.do">건강iN>나의건강관리>건강검진정보>건강검진 결과조회</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>외국인민원센터예약</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>외국인민원센터예약</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/foreignerCenter.do">민원여기요>개인민원>외국인민원센터예약</a></td>
+                                            </tr>
+                                            <tr></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="titlebox2">
+                                <span class="previous">사회보험 징수포털</span>
+                                <span class="now">건강보험공단 통합 홈페이지</span>
+                            </div>
+                            <div class="changes">
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>보험료납부</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>보험료 조회/납부</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAba00101.do" >민원여기요>개인민원>보험료납부>보험료납부</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>보험료 대납</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAbb00101.do" >		민원여기요>개인민원>보험료납부>보험료대납</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>징수포털 납부결과 확인</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAbc00101.do" >	민원여기요>개인민원>보험료 조회>홈페이지납부 보험료</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>고지내역조회</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>보험료 고지/납부현황</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAca00101.do">민원여기요>개인민원>보험료 조회>고지내역조회</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>징수포털 고지내역 조회</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAcb00101.do">민원여기요>개인민원>보험료고지서>홈페이지 고지내역 조회</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="changes-box">
+                                    <div class="sorts1">
+                                        <span><p>신청서비스</p></span>
+                                    </div>
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 250px;">
+                                            <col style="width: 60px;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>전자고지>이메일고지</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAda00101.do" >민원여기요>개인민원>보험료고지서>이메일고지서신청</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>전자고지>모바일고지</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAda00201.do" >		민원여기요>개인민원>보험료고지서>모바일고지서신청</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>전자고지>징수포털고지</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAda00301.do" >	민원여기요>개인민원>보험료고지서>홈페이지고지서신청</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>고지서>재발급신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAdb00101.do" >		민원여기요>개인민원>보험료고지서>보험료고지서재발급</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>고지서>송달지 변경/해지</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAdb00201.do" >	민원여기요>개인민원>보험료고지서>고지서송달지변경신청</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>자동이체 신청/해지</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/jpAdc00101.do" >	민원여기요>개인민원>보험료 조회>홈페이지납부 보험료</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>보험료 환급금 신청</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/minwon/retrieveHwangubTotalList.do" >		민원여기요>개인민원>환급금 조회/신청</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>심사청구</td>
+                                                <td><img src="../img/arr-link-hompage.png" alt="는 이하로 변경"></td>
+                                                <td><a href="https://www.nhis.or.kr/nhis/policy/wbhabe06700m01.do" >	정책센터>권리구제제도>징수심사청구</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice-box3"></div>
+                    <div class="after-service">
+                        <div class="office">
+                            <span>담당부서</span>
+                            <p>부서명:고객지원실</p>
+                        </div>
+                        <div class="docu-readers">
+                            <span>뷰어다운</span>
+                            <a href="https://www.hancom.com/cs_center/csDownload.do" class="hwp-i">한글뷰어</a>
+                            <a href="https://acrobat.adobe.com/kr/ko/acrobat/pdf-reader.html" class="icro-i">아크로뱃뷰어</a>
+                        </div>
+                        <div class="review">
+                            <span>만족도</span>
+                            <p>페이지의 내용이나 사용편의성에 대해 만족하십니까?</p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <input type="radio" id="very-satisfied" name="review-radio">
+                                            <label for="very-satisfied">매우만족</label>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <input type="radio" id="satisfied" name="review-radio">
+                                            <label for="satisfied">만족</label>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <input type="radio" id="okay" name="review-radio">
+                                            <label for="okay">보통</label>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <input type="radio" id="not-ok" name="review-radio">
+                                            <label for="not-ok">불만족</label>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <input type="radio" id="sucks" name="review-radio">
+                                            <label for="sucks">매우불만족</label>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="comment">
+                                <input type="text" placeholder="여러분의 소중한 의견을 보내주세요">
+                                <button type="submit">입력</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-navbar">
+            <ul>
+                <li><a href="https://www.nhis.or.kr/nhis/together/wbhaec01000m01.do"><span><img src="../img/ico-release-info.png" alt="정보공개"></span>정보공개</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhabd05500m01.do"><span><img src="../img/ico-civil-complaint.png" alt="민원상담"></span>민원상담</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaze01100m01.do"><span><img src="../img/ico-customer-center.png" alt="고객센터"></span>고객센터</a></li>
+                <li><a href="#"><span><img src="../img/ico-customer-security.png" alt="보안프로그램"></span>보안프로그램</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba03900m01.do"><span><img src="../img/ico-form.png" alt="서식자료실"></span>서식자료실</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/etc/wbhazd01200m01.do"><span><img src="../img/ico-help-center.png" alt="홈페이지도움센터"></span>홈페이지도움센터</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/kakaoView.do"><span><img src="../img/ico-kakao-on.png" alt="카카오상담"></span>카카오상담</a></li>
+            </ul>
+        </div>
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaze01900m01.do">이용약관</a></li>
+                        <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaze02801m01.do">영상정보처리기기 운영지침</a></li>
+                        <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaze01960m01.do">개인정보처리방침</a></li>
+                        <li><a href="https://www.nhis.or.kr/helpcom_new/hc_user_main.jsp">온라인도우미</a></li>
+                    </ul>
+                    <div class="shortcuts">
+                        <div class="family">
+                            <input type="checkbox" id="familyCheck">
+                            <label for="familyCheck">내부관련사이트</label>
+                            <div class="site-box">
+                                <div>
+                                    <ul>
+                                        <li><a href="http://www.longtermcare.or.kr">노인장기요양보험</a></li>
+                                        <li><a href="http://si4n.nhis.or.kr">사회보험징수포털</a></li>
+                                        <li><a href="https://medicare.nhis.or.kr/portal">요양기관정보마당 사이트</a></li>
+                                        <li><a href="http://edi.nhis.or.kr">국민건강보험 EDI서비스</a></li>
+                                        <li><a href="https://sis.nhis.or.kr/nxui/index.do">건강관리포털시스템</a></li>
+                                        <li><a href="http://life.nhis.or.kr">국가건강검진교육연수원</a></li>
+                                        <li><a href="http://nhiss.nhis.or.kr">국민건강보험자료 공유서비스</a></li>
+                                        <li><a href="http://hrd.nhis.or.kr">국민건강보험공단 인재개발원</a></li>
+                                        <li><a href="http://lib.nhis.or.kr">국민건강보험공단 전문도서관</a></li>
+                                        <li><a href="/family/index.do">국민건강보험공단 공단가족</a></li>
+                                    </ul>
+                                </div>
+                                <label for="familyCheck"></label>
+                            </div>
+                            <a href="#">이동</a>
+                        </div>
+                        <div class="friends">
+                            <input type="checkbox" id="friendsCheck">
+                            <label for="friendsCheck">관련사이트</label>
+                            <div class="site-box">
+                                <div>
+                                    <ul>
+                                        <li><a href="https://www.xn--2i4bo5fgwadewe.kr/sgcf/">서울요양원</a></li>
+                                        <li><a href="http://www.nhimc.or.kr">일산병원</a></li>
+                                        <li><a href="https://share.go.kr/main_www_2018.jsp">행정정보공동이용센터</a></li>
+                                        <li><a href="http://www.nps.or.kr">국민연금</a></li>
+                                        <li><a href="http://www.kcomwel.or.kr/kcomwel/main.jsp">근로복지공단</a></li>
+                                        <li><a href="http://www.mohw.go.kr/">보건복지부</a></li>
+                                        <li><a href="http://www.acrc.go.kr/acrc/index.do">국민권익위원회</a></li>
+                                        <li><a href="http://www.giro.or.kr">인터넷 지로납부</a></li>
+                                        <li><a href="http://www.hira.or.kr">건강보험심사평가원</a></li>
+                                        <li><a href="https://www.gov.kr/portal/main">정부24</a></li>
+                                        <li><a href="http://efamily.scourt.go.kr/">대한민국 법원 전자가족관계</a></li>
+                                        <li><a href="http://www.129.go.kr/">보건복지부 인터넷채팅상담</a></li>
+                                        <li><a href="https://data.kihasa.re.kr/">보건복지부 통계포털</a></li>
+                                        <li><a href="http://www.ssis.or.kr">한국사회보장정보원</a></li>
+                                        <li><a href="https://www.ei.go.kr/ei/eih/cm/hm/main.do">고용보험 인터넷서비스</a></li>
+                                        <li><a href="https://total.kcomwel.or.kr">고용산재보험 토탈서비스</a></li>
+                                        <li><a href="http://www.neca.re.kr">한국보건의료연구원</a></li>
+                                        <li><a href="http://www.k-medi.or.kr">한국의료분쟁조정중재원</a></li>
+                                        <li><a href="http://www.hikorea.go.kr">하이코리아</a></li>
+                                        <li><a href="http://www.obnhic.co.kr">국민건강보험 동우회</a></li>
+                                        <li><a href="http://www.4insure.or.kr">4대사회보험 정보연계센터</a></li>
+                                        <li><a href="http://www.safekorea.go.kr">행정안전부 국민재난안전포털</a></li>
+                                    </ul>
+                                </div>
+                                <label for="friendsCheck"></label>
+                            </div>
+                            <a href="#">이동</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="address-sns">
+                    <address class="address">
+                        <p>본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                        <p>26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터 :1577-1000 업무시간 : 09시~18시(월~금)</p>
+                        <p>Copyright @ 2020 by National Health Insurance Service. All rights reserved.</p>
+                    </address>
+                    <div class="snsbar">
+                        <ul class="marks">
+                            <li><a href="https://www.nhis.or.kr/nhis/about/wbhafd03600m01.do" title="고객만족경영체계 보기"><img src="../img/mark02-img01.png" alt="평생건강 With You 마크"></a></li>
+                            <li><a href="https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&certNum=2021-EP-R011" title="개인정보보호 우수 웹·시스템 보기"><img src="../img/mark02-img02.png" alt="개인정보보호 우수 웹·시스템"></a></li>
+                            <li><a href="https://www.nhis.or.kr/upload/ISMS-P.pdf" title="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증 마크 보기"><img src="../img/mark02-img05.png" alt="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증서 보기"></a></li>
+                            <li><a href="https://www.nhis.or.kr/upload/wa_qualith_certificate.pdf" title="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크) 보기"><img src="../img/mark02-img04.png" alt="WA인증마크"></a></li>
+                        </ul>
+                        <ul class="sns">
+                            <li><a href="https://blog.naver.com/nhicblog" title="국민건강보험공단 네이버 블로그 바로가기" class="naver"></a></li>
+                            <li><a href="http://blog.daum.net/nhicblog" title="국민건강보험공단 다음 블로그 바로가기" class="daum"></a></li>
+                            <li><a href="https://blog.naver.com/nhicblog" title="국민건강보험공단 페이스북 바로가기" class="facebook"></a></li>
+                            <li><a href="http://story.kakao.com/ch/nhis" title="국민건강보험공단 카카오스토리 바로가기" class="kaokaostory"></a></li>
+                            <li><a href="https://www.youtube.com/user/nhicsns" title="국민건강보험공단 유튜브 바로가기" class="youtube"></a></li>
+                            <li><a href="http://instagram.com/nhis_korea" title="국민건강보험공단 인스타그램 바로가기" class="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        <div class="to-top">
+            <a href="#" alt="맨위로가기"><img src="../img/btn-direction-top.png" alt="맨위로가기 화살표"></a>
+        </div>
+    </div>
+</body>
+</html>

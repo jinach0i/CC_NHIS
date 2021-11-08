@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Subject' content='국민건강보험공단'>
+	<meta name='Title' content='국민건강보험공단 메인'>
+	<meta name='Keywords' content='국민건강보험공단'>
+	<meta name='Author' content='최혜진'>
+	<meta name='Publisher' content='최혜진'>
+	<meta name='Description' content='국민건강보험공단'>
+	<meta name='Author-Date' content='2021-10-2'>
+	<meta name='Copyright' content='최혜진'>
+	<meta name='Robots' content='index,follow'>
+    <title>hwell</title>
+    <!-- FAVICON: -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#contents">내용 바로가기</a></li>
+		<li><a href="#footer">내용 바로가기</a></li>
+	</ul>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-top">
+                <div class="inner">
+                    <div class="volumebar">
+                        <span class="zoom">화면
+                            <button type="button" value="zoom in" class="zoom-in"></button><button type="button" value="zoom out" class="zoom-out"></button>
+                        </span>
+                        <span class="volumn">소리
+                            <button type="button" value="volumn up" class="zoom-in"></button>
+                            <button type="button" value="volumn down" class="zoom-out"></button>
+                            <button type="button" class="playsound"></button>
+                        </span>
+                    </div>
+                    <div class="membernav">
+                        <ul>
+                            <li><a href="./login.html">로그인</a></li>
+                            <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaza01600m01.do">회원가입</a></li>
+                            <li><a href="https://www.nhis.or.kr/nhis/etc/wbhazd01500m01.do">인증서안내</a></li>
+                            <li><a href="https://www.nhis.or.kr/nhis/about/sitemap.do">전체메뉴</a></li>
+                            <li>
+                                <button type="button" class="task-button1">Language</button>
+                                <div class="header-language">
+                                    <ul>
+                                        <li><a href="https://www.nhis.or.kr/english/index.do">English</a></li>
+                                        <li><a href="https://www.nhis.or.kr/chinese/index.do">中文</a></li>
+                                        <li><a href="https://www.nhis.or.kr/japanese/index.do">日本</a></li>
+                                        <li><a href="https://www.nhis.or.kr/vietnamese/index.do">Tiếng Việt</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="taskButton2">
+                                <label for="taskButton2">분야별업무사이트</label>
+                                <div class="task-shortcuts">
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="https://si4n.nhis.or.kr/jpza/JpZaa00101.do"></a>
+                                                <p>사회보험<br>통합징수 포탈</p>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.longtermcare.or.kr/npbs/index.jsp"></a>
+                                                <p>노인장기<br>요양보험</p>
+                                            </li>
+                                            <li>
+                                                <a href="https://medicare.nhis.or.kr/portal/"></a>
+                                                <p>요양기관<br>정보마당</p>
+                                            </li>
+                                            <li>
+                                                <a href="http://edi.nhis.or.kr/"></a>
+                                                <p>EDI<br>서비스</p>
+                                            </li>
+                                            <li>
+                                                <a href="http://sis.nhis.or.kr/nxui/index.do"></a>
+                                                <p>건강검진<br>기관포탈</p>
+                                            </li>
+                                            <li>
+                                                <a href="http://nhiss.nhis.or.kr/"></a>
+                                                <p>건강보험자료<br>공유서비스</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <label for="taskButton2"></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="inner">
+                    <h1><a href="index.html" title="logo" class="logo">h-well 국민건강보험</a></h1>
+                    <div class="gnbbar">
+                        <div class="bg"></div>
+                        <div class="gnb">
+                            <ul>
+                                <li>
+                                    <a href="./sub/sub1.html">민원여기요</a>
+                                    <ul class="two-depth">
+                                        <li><a href="">민원안내</a></li>
+                                        <li><a href="">개인민원</a></li>
+                                        <li><a href="">사업장민원</a></li>
+                                        <li><a href="">상담문의</a></li>
+                                        <li><a href="">신고센터</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./sub/sub2.html">건강iN</a>
+                                    <ul class="two-depth">
+                                        <li><a href="#">나의건강관리</a></li>
+                                        <li><a href="#">가족건강관리</a></li>
+                                        <li><a href="#">건강프로그램</a></li>
+                                        <li><a href="#">건강생활</a></li>
+                                        <li><a href="#">건강자료실</a></li>
+                                        <li><a href="#">검진기관/병원찾기</a></li>
+                                        <li><a href="#">국민건강알람</a></li>
+                                        <li><a href="#">건강생활실천지원금제</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./sub/sub3.html">정책센터</a>
+                                    <ul class="two-depth">
+                                        <li><a href="#">국민건강보험</a></li>
+                                        <li><a href="#">노인장기요양보험</a></li>
+                                        <li><a href="#">정책홍보관</a></li>
+                                        <li><a href="#">사회보험통합징수</a></li>
+                                        <li><a href="#">권리구제제도</a></li>
+                                        <li><a href="#">법령정보 건강Law</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./sub/sub4.html">국민과함께</a>
+                                    <ul class="two-depth">
+                                        <li><a href="#">정보공개</a></li>
+                                        <li><a href="#">경영공시</a></li>
+                                        <li><a href="#">국민참여</a></li>
+                                        <li><a href="#">뉴스/소식</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./sub/sub5.html">공단요모조모</a>
+                                    <ul class="two-depth">
+                                        <li><a href="#">공단소개</a></li>
+                                        <li><a href="#">조직 및 인원</a></li>
+                                        <li><a href="#">홍보센터</a></li>
+                                        <li><a href="#">경영철학</a></li>
+                                        <li><a href="#">사회공헌</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="favorite">
+                                <p>자주 찾는 메뉴</p>
+                                <ul>
+                                    <li><a href="https://www.nhis.or.kr/nhis/policy/wbhada01200m01.do">건강보험제도 유형</a></li>
+                                    <li><a href="https://www.nhis.or.kr/nhis/policy/wbhada01200m01.do">자격취득/가입</a></li>
+                                    <li><a href="https://www.nhis.or.kr/nhis/policy/wbhada01200m01.do">진료 및 투약정보</a></li>
+                                    <li><a href="https://www.nhis.or.kr/nhis/policy/wbhada01200m01.do">검진대상 조회</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <img src="./img/ico-search-navy.png" alt="icon to search">
+                        <img src="./img/ico-menu-navy.png" alt="go to menu">
+                </div>
+                </div>
+            </div>
+        </header>
+        <main id="contents">
+           <div class="main-top">
+                <div class="search-banner">
+                    <div class="inner">
+                        <div class="searchbar">
+                            <input type="text" placeholder="무엇을 찾고 계시나요?" autocomplete="off"></input>
+                            <a href="#" class="search-icon" title="search"></a>
+                        </div>
+                        <div class="smallbanner">
+                            <div class="smallbanner-slides">
+                                <ul>
+                                    <li>
+                                        <label for="s-slide09"></label>
+                                        <a href="#"><img src="./img/20210719_banner_pc01.png" alt="악수 대신 목례 캠페인"></a>
+                                        <label for="s-slide02"></label>
+                                    </li>
+                                    <li>
+                                        <label for="s-slide08"></label>
+                                        <a href="#"><img src="./img/20201110_banner_pc02.png" alt="건강보험료 환급신청 ‘사기 문자’ 주의 안내"></a>
+                                        <label for="s-slide03"></label>
+                                    </li>
+                                    <li>
+                                        <label for="s-slide09"></label>
+                                        <a href="#"><img src="./img/20210330_banner_pc01.png" alt="장애인 건강주치의 교육운영 안내"></a>
+                                        <label for="s-slide02"></label>
+                                    </li>
+                                    <li>
+                                        <label for="s-slide09"></label>
+                                        <a href="#"><img src="./img/20210318_banner_pc01.png" alt="건강보험료 환급신청 ‘사기 문자’ 주의 안내"></a>
+                                        <label for="s-slide02"></label>
+                                    </li>
+                                    <li>
+                                        <label for="s-slide09"></label>
+                                        <a href="#"><img src="./img/20210409_banner_pc01.png" alt="2021년도 제1차 자체 고객만족도 조사"></a>
+                                        <label for="s-slide02"></label>
+                                    </li>
+                                    <li>
+                                        <label for="s-slide09"></label>
+                                        <a href="#"><img src="./img/20210707_banner_pc02.png" alt="이 달의 캐릭터 배경화면"></a>
+                                        <label for="s-slide02"></label>
+                                    </li>
+                                    <li>
+                                        <label for="s-slide09"></label>
+                                        <a href="#"><img src="img/20210624_banner_pc01.png" alt="4대 사회보험료 신용카드 자동이체 감액 대상 보험 확대"></a>
+                                        <label for="s-slide02"></label>
+                                    </li>
+                                    <li>
+                                        <label for="s-slide09"></label>
+                                        <a href="#"><img src="img/20210621_banner_pc01.png" alt="학교 밖 청소년 건강검진 수검자 추첨 이벤트"></a>
+                                        <label for="s-slide02"></label>
+                                    </li>
+                                </ul>
+                                <input type="radio" name="s-slide" id="s-slide01" checked>
+                                <input type="radio" name="s-slide" id="s-slide02">
+                                <input type="radio" name="s-slide" id="s-slide03">
+                                <input type="radio" name="s-slide" id="s-slide04">
+                                <input type="radio" name="s-slide" id="s-slide05">
+                                <input type="radio" name="s-slide" id="s-slide06">
+                                <input type="radio" name="s-slide" id="s-slide07">
+                                <input type="radio" name="s-slide" id="s-slide08">
+                                <input type="radio" name="s-slide" id="s-slide09">
+                            </div>
+                            <div class="smallbanner-title">
+                                <span>1/9</span> 
+                                <button type="button" class="prev"><img src="./img/banner1-arrow-l.png" alt="이전"></button>
+                                <button type="button" class="prev"><img src="./img/slide1-pause.png" alt="일시정지"></button>
+                                <button type="button" class="next"><img src="./img/arrow-banner-r.png" alt="다음"></button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom">
+                    <div class="inner">
+                        <strong class="title">방문자별 맞춤 메뉴</strong>
+                        <input type="radio" id="tab1" name="custom-tab" checked>
+                        <label for="tab1">개인</label>
+                        <input type="radio" id="tab2" name="custom-tab">
+                        <label for="tab2">사업장</label>
+                        <div class="custombox nav1">
+                            <ul>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>자격득실</p>
+                                        <p>확인서 발급</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>환급금</p>
+                                        <p>조회/신청</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>보험료</p>
+                                        <p>조회/납부</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>본인부담</p>
+                                        <p>상한액조회</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>보험료</p>
+                                        <p>계산기</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>재난적의료비</p>
+                                        <p>지원안내</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>건강검진</p>
+                                        <p>대상조회</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>가족</p>
+                                        <p>건강 관리</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>민원</p>
+                                        <p>서식 자료실</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="custombox nav2">
+                            <ul>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>사업장</p>
+                                        <p>직원조회</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>사업장적용</p>
+                                        <p>통보서</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>보험료</p>
+                                        <p>고지내역조회</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>보험료</p>
+                                        <p>고지납부현황</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>4대보험</p>
+                                        <p>완납증명서</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>건강보험</p>
+                                        <p>납부확인서</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>연금</p>
+                                        <p>납후확인서</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>증명서 발급</p>
+                                        <p>사실 확인</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/minwon/jpAea00401.do">
+                                        <span></span>
+                                        <p>보험료</p>
+                                        <p>산출내역신청</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="big-banner">
+                    <div class="inner">
+                        <div class="banner-title">
+                            <p>1/1</p>
+                            <input type="radio" id="slide1">
+                            <img src="./img/slide-pause.png" alt="일시정지">
+                        </div>
+                        <div class="big-slides">
+                            <ul>
+                                <li>
+                                    <a href="http://www.nhis.or.kr/" title="국민지원금 대상 여부 조회하기">
+                                        <label for="slide3"></label>
+                                        <p class="small-sentence">함께하면 이겨낼 수 있습니다!</p><p class="bold-sentence">국민지원금 대상 여부 조회하기</p>
+                                        <label for="slide2"></label>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div class="main-under">
+                <div class="inner">
+                    <div class="news-wrap">
+                        <div class="news-area">
+                            <ul>
+                                <li><a href="https://www.nhis.or.kr/nhis/together/wbhaea01000m01.do">공지사항<img src="./img/icon_news_area_01.png" alt="공지사항"></a></li>
+                                <li><a href="https://www.nhis.or.kr/nhis/together/wbhaea02700m01.do">채용공고<img src="./img/icon_news_area_02.png" alt="채용공고"></a></li>
+                                <li><a href="https://www.nhis.or.kr/nhis/together/wbhaea01600m01.do">보도자료<img src="./img/icon_news_area_03.png" alt="보도자료"></a></li>
+                                <li><a href="https://www.nhis.or.kr/nhis/together/wbhaea02200m01.do">입찰공고<img src="./img/icon_news_area_04.png" alt="입찰공고"></a></li>
+                                <li><a href="https://www.nhis.or.kr/announce/index.do">경영공시<img src="./img/icon_news_area_05.png" alt="경영공시"></a></li>
+                            </ul>
+                        </div>
+                        <div class="wellness-info">
+                            <p class="title">건강정보</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/healthin/retrieveMdcAdminSknsClinic.do">가까운 병의원 찾기</a>
+                                    <span><img src="./img/icon-health-info-1.png" alt="가까운 병의원 찾기"></span>
+                                </li>
+                                <li>
+                                    <a href="">검진기관 찾기</a>
+                                    <span><img src="./img/icon-health-info-2.png" alt="검진기관 찾기"></span>
+                                </li>
+                                <li>
+                                    <a href="">건강iN 매거진</a>
+                                    <span><img src="./img/icon-health-info-3.png" alt="건강iN 매거진"></span>
+                                </li>
+                                <li>
+                                    <a href="">건강뉴스</a>
+                                    <span><img src="./img/icon-health-info-4.png" alt="건강뉴스"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="guarantee">
+                            <a href="https://www.nhis.or.kr/nhis/policy/wbhadd02100m01.do">
+                                <dl>
+                                    <dt>보장성강화</dt>
+                                    <dd>
+                                        병원비 걱정없는 든든한 나라
+                                        <br>
+                                        건강보험 보장성강화 대책을 알아보세요!
+                                    </dd>
+                                </dl>
+                            </a>
+                            <a href="https://www.nhis.or.kr/nhis/about/wbhafb07700m01.do" style="border-top: 1px solid #82c7c1; ">
+                                <dl>
+                                    <dt>건강보험연구원</dt>
+                                    <dd>
+                                        Health Insurance Research
+                                        <br>
+                                        Institute(HIRI)
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="policies-eventswrap">
+                        <div class="policies">
+                            <dl>
+                                <dt>알아두면 건강해 지는 건강보험공단&nbsp;
+                                    <strong>2021 주요정책</strong>
+                                    <dd>
+                                        <a href="https://www.nhis.or.kr/nhis/healthin/retrieveHealthinCheckUpTargetInfants.do">
+                                            <p>소중한 나의 가족! 건강관리 쉽게 하는 방법은 없을까요?</p>
+                                        </a>
+                                        <a href="https://www.nhis.or.kr/nhis/etc/retrieveMyHealthBenefit.do">
+                                            <p>내가 받는 건강 보험료 혜택! 얼마나 될까요?</p>
+                                        </a>
+                                        <a href="https://www.nhis.or.kr/nhis/policy/wbhadd04300m01.do">
+                                            <p>공단은 지역사회에 어떤 일을 할까요?</p>
+                                        </a>
+                                        <a href="https://www.nhis.or.kr/nhis/policy/wbhada07900m01.do">
+                                            <p>내 건강보험료는 어떻게 책정되었을까요?</p>
+                                        </a>
+                                    </dd>
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="event-banner">
+                            <div class="banner-title">
+                                <p class="title">이벤트</p>
+                                <input type="radio" name="event" class="event01" checked>
+                                <input type="radio" name="event" class="event02">
+                                <input type="radio" name="event" class="event03">
+                                <input type="radio" name="event" class="event04">
+                            </div>
+                            <div class="event-slides">
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/etc/20210802_event_pop01.do"><img src="./img/20210621_event_pc01.png" alt="초등충치예방서비스"></a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thirdwrap">
+                        <div class="alarm">
+                            <a href="http://forecast.nhis.or.kr/" class="title">국민건강 알람서비스</a>
+                            <a href="http://forecast.nhis.or.kr/" title="국민건강 알람서비스 새창으로 열기" class="date">2021.09.09<img src="" alt=""> <br>전국기준</a>
+                            <div class="graph">
+                                <div class="state">
+                                    <img src="./img/bg-health-noti-4.png" alt="경고그래프">
+                                    <strong>경고</strong>
+                                    <strong class="number"><br>83</strong>
+                                    <ul>
+                                        <li>
+                                            <button type="button" id="cold">감기</button>
+                                            <div class="level-1" id="1_div">
+                                                <div class="state">
+                                                    <strong id="1_str">관심</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="eye-disease">눈병</button>
+                                            <div class="level-2" id="2_div">
+                                                <div class="state">
+                                                    <strong id="2_str">관심</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="on">
+                                            <button type="button" id="food-poisoning">식중독</button>
+                                            <div class="level-3" id="3_div">
+                                                <div class="state">
+                                                    <strong id="3_str">경고</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="asthma">천식</button>
+                                            <div class="level-4" id="4_div">
+                                                <div class="state">
+                                                    <strong id="4_str">관심</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button type="button" id="dermatitis">피부염</button>
+                                            <div class="level-1" id="5_div">
+                                                <div class="state">
+                                                    <strong id="5_str">관심</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-us">
+                            <div class="organization-chart">
+                                <a href="https://www.nhis.or.kr/nhis/about/retrieveOrganizationChart.do">
+                                    <strong class="title">조직도</strong>
+                                    <p>국민건강보험공단의<br>부서별 조직도를 확인해보세요.</p>
+                                </a>
+                            </div>
+                            <div class="visit-nearbys">
+                                <a href="https://www.nhis.or.kr/nhis/about/retrieveBranchList.do">
+                                    <strong>지사찾기</strong>
+                                    <p>가까운 지사를 방문하시면<br>민원업무를 처리하실 수 있습니다.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="public-ad">
+                            <div class="title">홍보존</div>
+                            <div class="public-slides">
+                                <ul>
+                                    <li><a href="https://www.nhis.or.kr/nhis/about/wbhafc01000m01.do"><img src="img/02사이버홍보관.png" alt="public-ad1"></a></li>
+                                    <li><a href="http://www.podbbang.com/ch/16413"><img src="img/03건강보험팟캐스트.png" alt="public-ad2"></a></li>
+                                    <li><a href="https://www.nhis.or.kr/nhis/together/wbhaea02000m01.do"><img src="img/04건강보험웹진.png" alt="public-ad3"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-servicewrap">
+                        <div class="center">
+                            <strong class="cs title">고객센터</strong>
+                            <ul>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/etc/wbhaze01100m01.do">
+                                    <dl>
+                                        <dt>
+                                            1577-1000         
+                                            <dd>(해외이용 : 82-33-811-2001)</dd>
+                                            <dd>업무 시간  09:00~18:00</dd>
+                                        </dt>
+                                    </dl>
+                                    <span><img src="img/i-customer-1.png" alt="고객센터 아이콘"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.nhis.or.kr/nhis/about/wbhafb08400m01.do">
+                                        <dl>
+                                            <dt>외국인 민원센터</dt>
+                                        </dl>
+                                    <span><img src="img/i-customer-2.png" alt="외국인 민원센터 아이콘"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subscribe">
+                            <strong class="cs title">소식지 신청/해지</strong>
+                            <div>
+                                <span><img src="img/i-newsLetter.png" alt="소식지아이콘"></span>
+                                <a href="https://www.nhis.or.kr/nhis/etc/insertNewsInfoView.do">
+                                    <p>더 빠르게<br>건강보험 정책과<br>정보를 제공합니다.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="download">
+                            <strong class="cs title">APP 다운로드</strong>
+                            <ul>
+                                <li><span><img src="img/qr-android.png" alt="android qr"></span><p>Android</p></li>
+                                <li><span><img src="img/qr-iso.png" alt="ios qr"></span><p>iOS</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </main> 
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaze01900m01.do">이용약관</a></li>
+                        <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaze02801m01.do">영상정보처리기기 운영지침</a></li>
+                        <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaze01960m01.do">개인정보처리방침</a></li>
+                        <li><a href="https://www.nhis.or.kr/helpcom_new/hc_user_main.jsp">온라인도우미</a></li>
+                    </ul>
+                    <div class="shortcuts">
+                        <div class="family">
+                            <input type="checkbox" id="familyCheck">
+                            <label for="familyCheck">내부관련사이트</label>
+                            <div class="site-box">
+                                <div>
+                                    <ul>
+                                        <li><a href="http://www.longtermcare.or.kr">노인장기요양보험</a></li>
+                                        <li><a href="http://si4n.nhis.or.kr">사회보험징수포털</a></li>
+                                        <li><a href="https://medicare.nhis.or.kr/portal">요양기관정보마당 사이트</a></li>
+                                        <li><a href="http://edi.nhis.or.kr">국민건강보험 EDI서비스</a></li>
+                                        <li><a href="https://sis.nhis.or.kr/nxui/index.do">건강관리포털시스템</a></li>
+                                        <li><a href="http://life.nhis.or.kr">국가건강검진교육연수원</a></li>
+                                        <li><a href="http://nhiss.nhis.or.kr">국민건강보험자료 공유서비스</a></li>
+                                        <li><a href="http://hrd.nhis.or.kr">국민건강보험공단 인재개발원</a></li>
+                                        <li><a href="http://lib.nhis.or.kr">국민건강보험공단 전문도서관</a></li>
+                                        <li><a href="/family/index.do">국민건강보험공단 공단가족</a></li>
+                                    </ul>
+                                </div>
+                                <label for="familyCheck"></label>
+                            </div>
+                            <a href="#">이동</a>
+                        </div>
+                        <div class="friends">
+                            <input type="checkbox" id="friendsCheck">
+                            <label for="friendsCheck">관련사이트</label>
+                            <div class="site-box">
+                                <div>
+                                    <ul>
+                                        <li><a href="https://www.xn--2i4bo5fgwadewe.kr/sgcf/">서울요양원</a></li>
+                                        <li><a href="http://www.nhimc.or.kr">일산병원</a></li>
+                                        <li><a href="https://share.go.kr/main_www_2018.jsp">행정정보공동이용센터</a></li>
+                                        <li><a href="http://www.nps.or.kr">국민연금</a></li>
+                                        <li><a href="http://www.kcomwel.or.kr/kcomwel/main.jsp">근로복지공단</a></li>
+                                        <li><a href="http://www.mohw.go.kr/">보건복지부</a></li>
+                                        <li><a href="http://www.acrc.go.kr/acrc/index.do">국민권익위원회</a></li>
+                                        <li><a href="http://www.giro.or.kr">인터넷 지로납부</a></li>
+                                        <li><a href="http://www.hira.or.kr">건강보험심사평가원</a></li>
+                                        <li><a href="https://www.gov.kr/portal/main">정부24</a></li>
+                                        <li><a href="http://efamily.scourt.go.kr/">대한민국 법원 전자가족관계</a></li>
+                                        <li><a href="http://www.129.go.kr/">보건복지부 인터넷채팅상담</a></li>
+                                        <li><a href="https://data.kihasa.re.kr/">보건복지부 통계포털</a></li>
+                                        <li><a href="http://www.ssis.or.kr">한국사회보장정보원</a></li>
+                                        <li><a href="https://www.ei.go.kr/ei/eih/cm/hm/main.do">고용보험 인터넷서비스</a></li>
+                                        <li><a href="https://total.kcomwel.or.kr">고용산재보험 토탈서비스</a></li>
+                                        <li><a href="http://www.neca.re.kr">한국보건의료연구원</a></li>
+                                        <li><a href="http://www.k-medi.or.kr">한국의료분쟁조정중재원</a></li>
+                                        <li><a href="http://www.hikorea.go.kr">하이코리아</a></li>
+                                        <li><a href="http://www.obnhic.co.kr">국민건강보험 동우회</a></li>
+                                        <li><a href="http://www.4insure.or.kr">4대사회보험 정보연계센터</a></li>
+                                        <li><a href="http://www.safekorea.go.kr">행정안전부 국민재난안전포털</a></li>
+                                    </ul>
+                                </div>
+                                <label for="friendsCheck"></label>
+                            </div>
+                            <a href="#">이동</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="address-sns">
+                    <address class="address">
+                        <p>본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                        <p>26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터 :1577-1000 업무시간 : 09시~18시(월~금)</p>
+                        <p>Copyright @ 2020 by National Health Insurance Service. All rights reserved.</p>
+                    </address>
+                    <div class="snsbar">
+                        <ul class="marks">
+                            <li><a href="https://www.nhis.or.kr/nhis/about/wbhafd03600m01.do" title="고객만족경영체계 보기"><img src="./img/mark02-img01.png" alt="평생건강 With You 마크"></a></li>
+                            <li><a href="https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&certNum=2021-EP-R011" title="개인정보보호 우수 웹·시스템 보기"><img src="./img/mark02-img02.png" alt="개인정보보호 우수 웹·시스템"></a></li>
+                            <li><a href="https://www.nhis.or.kr/upload/ISMS-P.pdf" title="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증 마크 보기"><img src="./img/mark02-img05.png" alt="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증서 보기"></a></li>
+                            <li><a href="https://www.nhis.or.kr/upload/wa_qualith_certificate.pdf" title="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크) 보기"><img src="./img/mark02-img04.png" alt="WA인증마크"></a></li>
+                        </ul>
+                        <ul class="sns">
+                            <li><a href="https://blog.naver.com/nhicblog" title="국민건강보험공단 네이버 블로그 바로가기" class="naver"></a></li>
+                            <li><a href="http://blog.daum.net/nhicblog" title="국민건강보험공단 다음 블로그 바로가기" class="daum"></a></li>
+                            <li><a href="https://blog.naver.com/nhicblog" title="국민건강보험공단 페이스북 바로가기" class="facebook"></a></li>
+                            <li><a href="http://story.kakao.com/ch/nhis" title="국민건강보험공단 카카오스토리 바로가기" class="kaokaostory"></a></li>
+                            <li><a href="https://www.youtube.com/user/nhicsns" title="국민건강보험공단 유튜브 바로가기" class="youtube"></a></li>
+                            <li><a href="http://instagram.com/nhis_korea" title="국민건강보험공단 인스타그램 바로가기" class="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        <div class="side-navbar">
+            <ul>
+                <li><a href="https://www.nhis.or.kr/nhis/together/wbhaec01000m01.do"><span><img src="./img/ico-release-info.png" alt="정보공개"></span>정보공개</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhabd05500m01.do"><span><img src="./img/ico-civil-complaint.png" alt="민원상담"></span>민원상담</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/etc/wbhaze01100m01.do"><span><img src="./img/ico-customer-center.png" alt="고객센터"></span>고객센터</a></li>
+                <li><a href="#"><span><img src="./img/ico-customer-security.png" alt="보안프로그램"></span>보안프로그램</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/wbhaba03900m01.do"><span><img src="./img/ico-form.png" alt="서식자료실"></span>서식자료실</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/etc/wbhazd01200m01.do"><span><img src="./img/ico-help-center.png" alt="홈페이지도움센터"></span>홈페이지도움센터</a></li>
+                <li><a href="https://www.nhis.or.kr/nhis/minwon/kakaoView.do"><span><img src="./img/ico-kakao-on.png" alt="카카오상담"></span>카카오상담</a></li>
+            </ul>
+        </div>
+        <div class="to-top">
+            <a href="#" alt="맨위로가기"><img src="./img/btn-direction-top.png" alt="맨위로가기 화살표"></a>
+        </div>
+    </div>
+</body>
+</html>
