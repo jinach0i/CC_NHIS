@@ -89,6 +89,7 @@ vertical-align: top;}
 .smallbanner{width: 410px; height: 100%; float: right; }
 .smallbanner img{display: inline-block;}
 .smallbanner .smallbanner-title{width: 410px; height: 100%;}
+.smallbanner .smallbanner-title button{background-color: transparent;}
 .smallbanner .smallbanner-slides{width: 410px; height: 118px; overflow: hidden;}
 .smallbanner .smallbanner-slides ul{}
 .smallbanner .smallbanner-slides ul li{display: inline-block; white-space: nowrap; vertical-align: middle; width: 100%; }
