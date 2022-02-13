@@ -17,21 +17,21 @@ a{color: #6c6d73;}
 /* HEADER */
 .header-top{color: #707377; height: 46px; padding-top: 12px; box-sizing: border-box;}
 .header-top .volumebar{width: 50%; float: left;}
-.header-top .volumebar .zoom{}
+.header-top .volumebar .zoom{vertical-align: top;}
 .header-top .volumebar button{width: 20px; height: 20px; margin-right: 1px; cursor: pointer;}
 .zoom-in{background: url('../img/btn-increase.png') no-repeat;}
 .zoom-out{background: url('../img/btn-decrease.png') no-repeat;}
 .playsound{background: url('../img/btn-sound.png') no-repeat;}
 .playsound:focus{background: url('../img/btn-mute.png') no-repeat;}
-.header-top .volumebar .volumn{margin-left: 20px;}
+.header-top .volumebar .volumn{margin-left: 20px; vertical-align: top;}
 .header-top .membernav{width: 50%; float: right;}
 .header-top .membernav input{display: none;}
 .header-top .membernav ul li{float: left;}
 .header-top .membernav>ul>li>a:after{content: "  ㅣ  "; white-space: pre-wrap; color: #e1e1e1;}
 .header-top .membernav .task-button2:before{content: "  ㅣ  "; white-space: pre-wrap; color: #e1e1e1; top: -3px;}
-.header-top .membernav ul li button{border: none; background: transparent url('../img/arrow-navy-8x6.png') no-repeat right 3px; padding-right: 15px;} 
+.header-top .membernav ul li button{border: none; background: transparent url('../img/arrow-navy-8x6.png') no-repeat right 3px; padding-right: 15px; line-height: 10px;} 
 .header-top .membernav ul li .task-button1{color: #707377; padding-right: 15px;}
-.header-top .membernav ul li input+label{color: #d7021b; display: inline-block; background: transparent url('../img/arrow-navy-8x6.png') no-repeat right 5px; padding-right: 20px;}
+.header-top .membernav ul li input+label{color: #d7021b; display: inline-block; background: transparent url('../img/arrow-navy-8x6.png') no-repeat right 5px; padding-right: 20px; line-height: 16px;}
 .header-top .membernav ul li label{padding-left: 10px; cursor: pointer;}
 .header-top .membernav ul li input:checked +label + div{display: block;}
 .header-top .membernav ul li input+label+div{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100%; background:rgba(255, 255, 255, .6);}
@@ -220,7 +220,8 @@ vertical-align: top;}
 .alarm .graph>.state>p{}
 .alarm .graph>.state ul{padding-top: 60px;}
 .alarm .graph>.state ul li{width: 20%; box-sizing: border-box;}
-.alarm .graph>.state ul li button{width: 100%; height: 40px; line-height: 38px; text-align: center; background-color: white; border: 1px solid #ccc; font-size: 13px; color: #44465c;}
+.alarm .graph>.state ul li button{width: 100%; height: 40px; line-height: 38px; text-align: center; background-color: white; border: 1px solid #ccc; font-size: 13px; color: #44465c; border-right: none;}
+.alarm .graph>.state ul li:last-child{border-right: 1px solid #ccc;}
 .alarm .graph>.state ul li:hover button{background-color: #44465c; color: white;}
 .alarm .graph>.state ul li strong{display: none;}
 .thirdwrap .about-us{float: left; width: 29.8%; margin-left: 5.3%;}
@@ -271,15 +272,12 @@ vertical-align: top;}
 .customer-servicewrap .download ul li span{text-align: center; display: inline-block;}
 .customer-servicewrap .download ul li span img{display: inline-block; vertical-align: middle;}
 .customer-servicewrap .download ul li p{font-size: 15px;}
-
-
-
 /* SIDE-NAVIGATION-BAR */
 .side-navbar{width: 40px; position: fixed; top: 260px; right: 0; z-index: 2;}
 .side-navbar ul{margin-top: 1px; position: relative;}
 .side-navbar ul li{right: 0;}
 .side-navbar ul li:hover a{right: 78px;}
-.side-navbar ul li a{display: block; width: 135px; height: 40px; background-color: #44465c; color: white; font-size: 13px; position: relative; padding: 0 0 0 40px; border-bottom: 1px solid grey;}
+.side-navbar ul li a{display: block; width: 135px; height: 40px; line-height: 40px; background-color: #44465c; color: white; font-size: 13px; position: relative; padding: 0 0 0 40px; border-bottom: 1px solid grey;}
 .side-navbar ul li li:hover{right: 78px;}
 .side-navbar ul li a span{display: inline-block; width: 40px; height: 40px; text-align: center; line-height: 40px; position: absolute; top: 0; left: 0;}
 .side-navbar ul li a span img{width: 16px; height: 16px;}
@@ -336,3 +334,11 @@ vertical-align: top;}
 .address-sns .snsbar .sns li .instagram{display: block; width: 32px; height: 32px; border-radius: 50%; text-align: center; line-height: 30px; background: white url('../img/ico-insta-small.png') no-repeat 50% 50%;}
 
 .to-top {position: fixed; right: 22.5px; bottom: 40px; z-index: 3; width: 40px; height: 40px;}
+
+@media screen and (max-width: 1520px){
+    #wrap::after{display: none;}
+    #wrap::before{display: none;}
+}
+@media screen and (max-width: 1200px){
+    
+}
